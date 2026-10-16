@@ -94,6 +94,7 @@ function render() {
   document.getElementById("more").replaceChildren(
     card("quiz.html?mode=weak", "חזרה על טעויות", overall.weak ? `${overall.weak} שאלות שטעית בהן לאחרונה` : "אין כרגע שאלות לחזרה"),
     card("game.html", "משחק", "מרוץ תמרורים ושאלות ב-60 שניות"),
+    card("signs-quiz.html", "מבחן תמרורים", "מבחן על כל לוח התמרורים, או על חלק אחד בו"),
     card("signs.html", "לוח התמרורים", `${signs.filter((s) => isMastered(progress.s[s.number])).length} מתוך ${signs.length} תמרורים בשליטה`),
   );
 

@@ -198,3 +198,16 @@ table.t th { background: #efeee8; }
 .lesson-nav { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
 .lesson-nav .btn { margin: 0; }
 .source { display: block; margin-top: .4rem; color: var(--muted); }
+
+/* signs test */
+.setup-group h2 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; }
+.prompt-text { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.25rem; font-size: 1.15rem; margin: 0 0 1rem; }
+.answers.imgs { grid-template-columns: repeat(2, 1fr); }
+.answer.img { display: grid; place-items: center; padding: .75rem; min-height: 9.5rem; position: relative; }
+.answer.img .sign-imgs { height: 8rem; }
+.answer .key { color: var(--muted); font-size: .85rem; margin-inline-end: .6rem; font-variant-numeric: tabular-nums; }
+.answer.img .key { position: absolute; top: .4rem; inset-inline-start: .6rem; margin: 0; }
+.review { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; gap: .75rem; }
+.review li { display: flex; gap: 1rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: .6rem 1rem; }
+.review .sign-imgs { height: 5rem; width: 6.5rem; flex: none; }
+@media (max-width: 30rem) { .answer.img { min-height: 7.5rem; } .answer.img .sign-imgs { height: 6rem; } }

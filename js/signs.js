@@ -19,6 +19,7 @@ const chip = (label, onclick, pressed = false) =>
 const partButtons = [[0, "הכל"], ...parts].map(([part, label]) => {
   const button = chip(label, () => {
     activePart = part;
+    testLink.href = part ? `signs-quiz.html?part=${part}` : "signs-quiz.html";
     partButtons.forEach((b) => b.setAttribute("aria-pressed", b === button));
     render();
   }, part === activePart);
@@ -32,7 +33,8 @@ const quizToggle = chip("מצב בוחן: הסתר פירוש", () => {
   flipHint.hidden = !hideMeaning;
   render();
 }, false);
-document.getElementById("tools").append(quizToggle);
+const testLink = el("a", { class: "chip", href: "signs-quiz.html" }, "למבחן תמרורים");
+document.getElementById("tools").append(quizToggle, testLink);
 search.addEventListener("input", render);
 
 function card(s) {

@@ -158,6 +158,7 @@ const NAV = [
   ["index.html", "ראשי"],
   ["learn.html", "חומר לימוד"],
   ["signs.html", "תמרורים"],
+  ["signs-quiz.html", "מבחן תמרורים"],
   ["game.html", "משחק"],
   ["quiz.html?mode=exam", "מבחן"],
 ];
